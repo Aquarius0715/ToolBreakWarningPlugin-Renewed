@@ -42,6 +42,7 @@ public final class ToolBreakWarningPlugin extends JavaPlugin {
     String sound_config;
 
     int allBrockIn = 0;
+    int add = 0;
 
 
     String prefix = ChatColor.BOLD + "[" + ChatColor.GREEN + "ToolBreakWarning" + ChatColor.WHITE + "" + ChatColor.BOLD + "] ";
