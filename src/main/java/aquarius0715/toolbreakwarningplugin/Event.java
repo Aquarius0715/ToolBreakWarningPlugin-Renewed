@@ -117,6 +117,8 @@ public class Event implements Listener {
         if (plugin.plugin_stats) {
             player.sendMessage(plugin.prefix + "ToolBreakWarning は有効化されています。詳細は「/tbw」と入力して確認して下さい。");
 
+            plugin.statistic.getStatistic(event.getPlayer());
+
             plugin.notice_stats.putIfAbsent(player.getUniqueId(), true);
             plugin.stopper_stats.putIfAbsent(player.getUniqueId(), true);
             plugin.scoreboard_stats.putIfAbsent(player.getUniqueId(), true);

@@ -32,7 +32,6 @@ public final class ToolBreakWarningPlugin extends JavaPlugin {
     Team ranks;
     Team nextRank;
     Team achieveInt;
-    Team hourminedBlocks;
 
     ScoreBoard ScoreBoard = new ScoreBoard(this);
     SoundData SoundData = new SoundData(this);
@@ -42,7 +41,6 @@ public final class ToolBreakWarningPlugin extends JavaPlugin {
     String sound_config;
 
     int allBrockIn = 0;
-    int add = 0;
 
 
     String prefix = ChatColor.BOLD + "[" + ChatColor.GREEN + "ToolBreakWarning" + ChatColor.WHITE + "" + ChatColor.BOLD + "] ";

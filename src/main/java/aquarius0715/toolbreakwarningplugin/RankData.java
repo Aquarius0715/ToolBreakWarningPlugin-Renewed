@@ -41,11 +41,11 @@ public class RankData {
             plugin.remainRank.put(player.getUniqueId(), 300000 - plugin.allBlocks.get(player.getUniqueId()));
 
         } else if (plugin.allBlocks.get(player.getUniqueId()) >= 300000 && plugin.allBlocks.get(player.getUniqueId()) <= 500000) {
-            plugin.rank.put(player.getUniqueId(), "Super" + ChatColor.GRAY + "Miner");
+            plugin.rank.put(player.getUniqueId(), ChatColor.WHITE + "Super" + ChatColor.GRAY + "Miner");
             plugin.remainRank.put(player.getUniqueId(), 500000 - plugin.allBlocks.get(player.getUniqueId()));
 
         } else if (plugin.allBlocks.get(player.getUniqueId()) >= 500000 && plugin.allBlocks.get(player.getUniqueId()) <= 1000000) {
-            plugin.rank.put(player.getUniqueId(), "Super" + ChatColor.GRAY + "Miner" + ChatColor.YELLOW + "+");
+            plugin.rank.put(player.getUniqueId(), ChatColor.WHITE + "Super" + ChatColor.GRAY + "Miner" + ChatColor.YELLOW + "+");
             plugin.remainRank.put(player.getUniqueId(), 1000000 - plugin.allBlocks.get(player.getUniqueId()));
 
         } else if (plugin.allBlocks.get(player.getUniqueId()) >= 1000000 && plugin.allBlocks.get(player.getUniqueId()) <= 3000000) {

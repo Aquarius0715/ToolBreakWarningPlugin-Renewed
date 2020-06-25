@@ -15,6 +15,7 @@ public class Statistic {
 
         for (Material material : Material.values()) {
             plugin.allBrockIn = plugin.allBrockIn + player.getStatistic(org.bukkit.Statistic.MINE_BLOCK, material);
+
         }
         plugin.allBlocks.put(player.getUniqueId(), plugin.allBrockIn);
         plugin.allBrockIn = 0;

@@ -128,14 +128,6 @@ public class Command implements CommandExecutor {
                     return true;
                 }
             }
-
-            if (args.length == 2) {
-                if (args[0].equalsIgnoreCase("add")) {
-
-                    plugin.allBlocks.put(((Player) sender).getUniqueId(), plugin.allBlocks.get(((Player) sender).getUniqueId()) + Integer.parseInt(args[1]));
-                    sender.sendMessage("debug");
-                }
-            }
             return false;
         }
         return false;
